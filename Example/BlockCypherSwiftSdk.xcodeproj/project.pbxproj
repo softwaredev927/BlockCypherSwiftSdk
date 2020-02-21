@@ -41,9 +41,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		70DA47347847C5C632A64642 /* Pods_BlockCypherSwiftSdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockCypherSwiftSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C3C8F8DC354E9D750B12C47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A7C995A501754F5B75DFEFF3 /* BlockCypherSwiftSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BlockCypherSwiftSdk.podspec; path = ../BlockCypherSwiftSdk.podspec; sourceTree = "<group>"; };
-		CDBB987BFE535937B3FEDF62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C3C8F8DC354E9D750B12C47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A7C995A501754F5B75DFEFF3 /* BlockCypherSwiftSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BlockCypherSwiftSdk.podspec; path = ../BlockCypherSwiftSdk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CDBB987BFE535937B3FEDF62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CF6B7AEDECE5A6305EB2FF71 /* Pods_BlockCypherSwiftSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockCypherSwiftSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4288BD7243474480E68060D /* Pods-BlockCypherSwiftSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockCypherSwiftSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-BlockCypherSwiftSdk_Example/Pods-BlockCypherSwiftSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C9D617394CEAC7D534F7FF /* Pods-BlockCypherSwiftSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockCypherSwiftSdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlockCypherSwiftSdk_Tests/Pods-BlockCypherSwiftSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 				F0C9D617394CEAC7D534F7FF /* Pods-BlockCypherSwiftSdk_Tests.debug.xcconfig */,
 				5F8FEC957668195AB0982230 /* Pods-BlockCypherSwiftSdk_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

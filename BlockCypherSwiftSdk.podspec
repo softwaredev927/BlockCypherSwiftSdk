@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/s.bezpalyi@yandex.com/BlockCypherSwiftSdk'
+  s.homepage         = 'https://github.com/serhiy1017/BlockCypherSwiftSdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 's.bezpalyi@yandex.com' => 's.bezpalyi@yandex.com' }
-  s.source           = { :git => 'https://github.com/s.bezpalyi@yandex.com/BlockCypherSwiftSdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/serhiy1017/BlockCypherSwiftSdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
