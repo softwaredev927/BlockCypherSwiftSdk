@@ -1,0 +1,6 @@
+framework module Pods_BlockCypherSwiftSdk_Example {
+  umbrella header "Pods-BlockCypherSwiftSdk_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
