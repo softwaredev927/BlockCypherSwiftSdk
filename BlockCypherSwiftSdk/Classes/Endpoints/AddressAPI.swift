@@ -15,7 +15,7 @@ public class AddressAPI: BaseEndpoint {
         
     }
     
-    func generateAddress(completionHandler: @escaping (AddressKeyChain?, Bool)->Void) {
+    public func generateAddress(completionHandler: @escaping (AddressKeyChain?, Bool)->Void) {
         print (self.endPoint)
         fetchUrl(endpoint: self.endPoint, param: nil, responseType: AddressKeyChain.self) { (addrKeyChain, succ) in
             if (succ) {
