@@ -10,7 +10,7 @@ import Foundation
 
 //A Block represents the current state of a particular block from a Blockchain.
 //Typically returned from the Block Hash and Block Height endpoints.
-class Block {    
+public struct Block: Codable {
     
     //The hash of the block; in Bitcoin, the hashing function is SHA256(SHA256(block))
     var hash: String = ""
@@ -32,7 +32,7 @@ class Block {
     
     //Optional Raw size of block (including header and all transactions) in bytes.
     //Not returned for bitcoin blocks earlier than height 389104.
-    var size: Int = 0
+    var size: Int?
     
     //Block version.
     var ver: Int = 0
@@ -73,5 +73,5 @@ class Block {
     
     //Optional If there are more transactions that couldn't fit in the txids array,
     // this is the BlockCypher URL to query the next set of transactions (within a Block object).
-    var next_txids: String = ""
+    var next_txids: String?
 }

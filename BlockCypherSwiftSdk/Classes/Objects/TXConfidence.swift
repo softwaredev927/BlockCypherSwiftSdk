@@ -11,7 +11,7 @@ import Foundation
 //A TXConfidence represents information about the confidence that an unconfirmed transaction will make it into the next block.
 //Typically used as a return object from the Transaction Confidence Endpoint.
 
-class TXConfidence {
+public struct TXConfidence: Codable {
     
     //The age of the transaction in milliseconds, based on the earliest time BlockCypher saw it relayed in the network.
     var age_millis: Int = 0

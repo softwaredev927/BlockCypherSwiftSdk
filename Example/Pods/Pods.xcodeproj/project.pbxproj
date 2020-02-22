@@ -90,6 +90,13 @@
 		8426870D24001F5D00896ABF /* AddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426870C24001F5D00896ABF /* AddressAPI.swift */; };
 		8426870F240024F300896ABF /* BaseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426870E240024F300896ABF /* BaseEndpoint.swift */; };
 		84268711240029AC00896ABF /* AddressKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268710240029AC00896ABF /* AddressKeychain.swift */; };
+		84268713240100FC00896ABF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268712240100FC00896ABF /* Address.swift */; };
+		84268715240103AA00896ABF /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84268714240103AA00896ABF /* Wallet.swift */; };
+		8426871724010DB500896ABF /* TXSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426871624010DB500896ABF /* TXSkeleton.swift */; };
+		8426871924010E4E00896ABF /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426871824010E4E00896ABF /* Job.swift */; };
+		8426871B24010F3800896ABF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426871A24010F3800896ABF /* Event.swift */; };
+		8426871D24010FE800896ABF /* PaymentForward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426871C24010FE800896ABF /* PaymentForward.swift */; };
+		8426871F24011B5E00896ABF /* TransactionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426871E24011B5E00896ABF /* TransactionAPI.swift */; };
 		86A4582105FDBBD5C53E0A2DAB4CC003 /* Nimble-Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 321613D3C2FD8CD5B501D942FC99965C /* Nimble-Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6425333CB2AEB83B9870F2D619BBA4E /* FBSnapshotTestController.m */; };
 		8B32C823A5263884ACC364067EFADA22 /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F72DE5B1649CD164EFE965ED1C01C /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -343,6 +350,13 @@
 		8426870C24001F5D00896ABF /* AddressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAPI.swift; sourceTree = "<group>"; };
 		8426870E240024F300896ABF /* BaseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEndpoint.swift; sourceTree = "<group>"; };
 		84268710240029AC00896ABF /* AddressKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressKeychain.swift; sourceTree = "<group>"; };
+		84268712240100FC00896ABF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		84268714240103AA00896ABF /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		8426871624010DB500896ABF /* TXSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXSkeleton.swift; sourceTree = "<group>"; };
+		8426871824010E4E00896ABF /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		8426871A24010F3800896ABF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8426871C24010FE800896ABF /* PaymentForward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentForward.swift; sourceTree = "<group>"; };
+		8426871E24011B5E00896ABF /* TransactionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAPI.swift; sourceTree = "<group>"; };
 		84BF919D020905A7BF13E82D9725FB6F /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
 		853E409934965A580F65F89581D275CD /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		85CE6AE58CEA4F2AD1BC778D67CB85B5 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -692,6 +706,12 @@
 				8426870024001D1500896ABF /* TXOutput.swift */,
 				842686FD24001D1500896ABF /* TXRef.swift */,
 				84268710240029AC00896ABF /* AddressKeychain.swift */,
+				84268712240100FC00896ABF /* Address.swift */,
+				84268714240103AA00896ABF /* Wallet.swift */,
+				8426871624010DB500896ABF /* TXSkeleton.swift */,
+				8426871824010E4E00896ABF /* Job.swift */,
+				8426871A24010F3800896ABF /* Event.swift */,
+				8426871C24010FE800896ABF /* PaymentForward.swift */,
 			);
 			name = Objects;
 			path = BlockCypherSwiftSdk/Classes/Objects;
@@ -702,6 +722,7 @@
 			children = (
 				8426870C24001F5D00896ABF /* AddressAPI.swift */,
 				8426870E240024F300896ABF /* BaseEndpoint.swift */,
+				8426871E24011B5E00896ABF /* TransactionAPI.swift */,
 			);
 			name = Endpoints;
 			path = BlockCypherSwiftSdk/Classes/Endpoints;
@@ -1241,12 +1262,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84268715240103AA00896ABF /* Wallet.swift in Sources */,
 				84268711240029AC00896ABF /* AddressKeychain.swift in Sources */,
 				8426870624001D1500896ABF /* TX.swift in Sources */,
 				8426870824001D1500896ABF /* TXInput.swift in Sources */,
+				8426871924010E4E00896ABF /* Job.swift in Sources */,
+				8426871D24010FE800896ABF /* PaymentForward.swift in Sources */,
 				8426870D24001F5D00896ABF /* AddressAPI.swift in Sources */,
 				08D8EC14E15274EACD5AB7EB36CF49DE /* BlockCypherSwiftSdk-dummy.m in Sources */,
 				8426870324001D1500896ABF /* Block.swift in Sources */,
+				8426871B24010F3800896ABF /* Event.swift in Sources */,
+				84268713240100FC00896ABF /* Address.swift in Sources */,
+				8426871F24011B5E00896ABF /* TransactionAPI.swift in Sources */,
+				8426871724010DB500896ABF /* TXSkeleton.swift in Sources */,
 				8426870F240024F300896ABF /* BaseEndpoint.swift in Sources */,
 				8426870524001D1500896ABF /* TXConfidence.swift in Sources */,
 				8426870224001D1500896ABF /* Blockchain.swift in Sources */,

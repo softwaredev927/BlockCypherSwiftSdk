@@ -9,31 +9,31 @@ import Foundation
 
 
 //An AddressKeychain represents an associated collection of public and private keys alongside their respective public address. Generally returned and used with the Generate Address Endpoint.
-public struct AddressKeyChain: Decodable {
+public struct AddressKeyChain: Codable {
     
-    var address: String = "" //Standard address representation.
+    public var address: String = "" //Standard address representation.
     
     //Hex-encoded Public key.
     
-    var publicKey: String = "" //original name: public
+    public var publicKey: String = "" //original name: public
     
     //Hex-encoded Private key.
-    var privateKey: String = "" //original name: private
+    public var privateKey: String = "" //original name: private
     
     //Wallet import format, a common encoding for the private key.
-    var wif: String = ""
+    public var wif: String = ""
     
     //Optional Array of public keys to provide to generate a multisig address.
-    var pubkeys: [String]? = []
+    public var pubkeys: [String]? = []
     
     //Optional If generating a multisig address, the type of multisig script; typically "multisig-n-of-m", where n and m are integers.
-    var script_type: String?
+    public var script_type: String?
     
     //Optional If generating an OAP address, this represents the parent blockchain's underlying address (the typical address listed above).
-    var original_address: String?
+    public var original_address: String?
     
     //Optional The OAP address, if generated using the Generate Asset Address Endpoint.
-    var oap_address: String?
+    public var oap_address: String?
     
     private enum CodingKeys: String, CodingKey {
         case address

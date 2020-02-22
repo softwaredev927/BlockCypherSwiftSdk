@@ -9,30 +9,30 @@
 import Foundation
 
 //A TXOutput represents an output created by a transaction. Typically found within an array in a TX.
-class TXOutput {
+public struct TXOutput: Codable {
     
     //Value in this transaction output, in satoshis.
-    var value: Int = 0
+    public var value: Int = 0
     
     //Raw hexadecimal encoding of the encumbrance script for this output.
-    var script: String = ""
+    public var script: String?
     
     //Addresses that correspond to this output; typically this will only have a single address,
     // and you can think of this output as having "sent" value to the address contained herein.
-    var addresses: [String] = []
+    public var addresses: [String] = []
     
     //The type of encumbrance script used for this output.
-    var script_type: String = ""
+    public var script_type: String?
     
     //Optional The transaction hash that spent this output. Only returned for outputs that have been spent.
     //The spending transaction may be unconfirmed.
-    var spent_by: String = ""
+    public var spent_by: String?
     
     //Optional A hex-encoded representation of an OP_RETURN data output, without any other script instructions.
     //Only returned for outputs whose script_type is null-data.
-    var data_hex: String = ""
+    public var data_hex: String?
     
     //Optional An ASCII representation of an OP_RETURN data output, without any other script instructions.
     //Only returned for outputs whose script_type is null-data and if its data falls into the visible ASCII range.
-    var data_string: String = ""
+    public var data_string: String?
 }

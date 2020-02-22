@@ -10,7 +10,7 @@ import Foundation
 
 //A Blockchain represents the current state of a particular blockchain from the Coin/Chain resources that BlockCypher supports.
 //Typically returned from the Chain API endpoint.
-class Blockchain {
+public struct Blockchain: Codable {
     
     //The name of the blockchain represented, in the form of $COIN.$CHAIN.
     var name: String = ""
@@ -49,8 +49,8 @@ class Blockchain {
     var unconfirmed_count: Int = 0
 
     //Optional The current height of the latest fork to the blockchain; when no competing blockchain fork present, not returned with endpoints that return Blockchains.
-    var last_fork_height: Int = 0
+    var last_fork_height: Int?
 
     //Optional The hash of the latest confirmed block in the latest fork of the blockchain; when no competing blockchain fork present, not returned with endpoints that return Blockchains.
-    var last_fork_hash: String = ""
+    var last_fork_hash: String?
 }
