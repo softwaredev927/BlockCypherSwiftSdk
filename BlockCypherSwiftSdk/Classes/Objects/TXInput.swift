@@ -13,6 +13,9 @@ import Foundation
 // with the most prominent exceptions being attempted double-spend and coinbase inputs.
 public struct TXInput: Codable {
     
+    public init() {
+    }
+    
     //The previous transaction hash where this input was an output. Not present for coinbase transactions.
     public var prev_hash: String?
     

@@ -12,6 +12,9 @@ import Foundation
 // or an unconfirmed transaction that has yet to be included in a Block.
 //Typically returned from the Unconfirmed Transactions and Transaction Hash endpoints.
 public struct TX: Codable {
+    
+    public init() {
+    }
 
     //Height of the block that contains this transaction. If this is an unconfirmed transaction, it will equal -1.
     public var block_height: Int?

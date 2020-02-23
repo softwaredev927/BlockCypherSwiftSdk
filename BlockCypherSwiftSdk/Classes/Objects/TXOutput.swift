@@ -11,6 +11,9 @@ import Foundation
 //A TXOutput represents an output created by a transaction. Typically found within an array in a TX.
 public struct TXOutput: Codable {
     
+    public init() {
+    }
+    
     //Value in this transaction output, in satoshis.
     public var value: Int = 0
     
