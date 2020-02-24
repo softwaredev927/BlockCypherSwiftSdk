@@ -26,10 +26,10 @@ public struct TX: Codable {
     public var addresses: [String]?
     
     //The total number of satoshis exchanged in this transaction.
-    public var total: Int?
+    public var total: Int64?
     
     //The total number of fees---in satoshis---collected by miners in this transaction.
-    public var fees: Int?
+    public var fees: Int64?
     
     //The size of the transaction in bytes.
     public var size: Int?

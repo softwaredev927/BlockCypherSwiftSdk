@@ -15,32 +15,32 @@ public struct TXRef: Codable {
     public var address: String?
     
     //Height of the block that contains this transaction input/output. If it's unconfirmed, this will equal -1.
-    public var block_height: Int = 0
+    public var block_height: Int?
     
     //The hash of the transaction containing this input/output. While reasonably unique, using hashes as identifiers may be unsafe.
-    public var tx_hash: String = ""
+    public var tx_hash: String?
     
     //Index of this input in the enclosing transaction. It's a negative number for an output.
-    public var tx_input_n: Int = 0
+    public var tx_input_n: Int?
     
     //Index of this output in the enclosing transaction. It's a negative number for an input.
-    public var tx_output_n: Int = 0
+    public var tx_output_n: Int?
     
     //The value transfered by this input/output in satoshis exchanged in the enclosing transaction.
-    public var value: Int = 0
+    public var value: Int?
     
     //The likelihood that the enclosing transaction will make it to the next block;
     // reflects the preference level miners have to include the enclosing transaction. Can be high, medium or low.
     public var preference: String?
     
     //true if this is an output and was spent. If it's an input, or an unspent output, it will be false.
-    public var spent: Bool = false
+    public var spent: Bool?
     
     //true if this is an attempted double spend; false otherwise.
-    public var double_spend: Bool = false
+    public var double_spend: Bool?
     
     //Number of subsequent blocks, including the block the transaction is in. Unconfirmed transactions have 0 confirmations.
-    public var confirmations: Int = 0
+    public var confirmations: Int?
     
     //Optional Raw, hex-encoded script of this input/output.
     public var script: String?

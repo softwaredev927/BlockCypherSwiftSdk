@@ -15,7 +15,7 @@ public struct TXOutput: Codable {
     }
     
     //Value in this transaction output, in satoshis.
-    public var value: Int = 0
+    public var value: Int64 = 0
     
     //Raw hexadecimal encoding of the encumbrance script for this output.
     public var script: String?

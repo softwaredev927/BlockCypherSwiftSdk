@@ -21,15 +21,15 @@ public struct Address: Codable {
     public var hd_wallet: HDWallet?
     
     //Total amount of confirmed satoshis received by this address.
-    public var total_received: Int = 0
+    public var total_received: Int64 = 0
     
     //Total amount of confirmed satoshis sent by this address.
-    public var total_sent: Int = 0
+    public var total_sent: Int64 = 0
     
     //Balance of confirmed satoshis on this address.
     //This is the difference between outputs and inputs on this address,
     // but only for transactions that have been included into a block (i.e., for transactions whose confirmations > 0).
-    public var balance: Int = 0
+    public var balance: Int64 = 0
     
     //Balance of unconfirmed satoshis on this address.
     //Can be negative (if unconfirmed transactions are just spending outputs). Only unconfirmed transactions (haven't made it into a block) are included.
